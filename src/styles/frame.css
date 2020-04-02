@@ -1,0 +1,5 @@
+.dft__frame {
+  margin: 50px auto;
+  max-width: 100%;
+  width: var(--imageWidth);
+}
