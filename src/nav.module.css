@@ -1,3 +1,5 @@
+@import "./config.module.css";
+
 @keyframes pulse {
   0% {
     transform: scale3d(1, 1, 1);
@@ -10,7 +12,7 @@
   }
 }
 
-.dft__nav {
+.root {
   display: flex;
   left: 0;
   position: absolute;
@@ -18,7 +20,7 @@
   width: 100%;
 }
 
-.dft__nav__btn {
+.btn {
   animation: pulse 1s infinite;
   background: transparent;
   border: none;
@@ -34,19 +36,29 @@
   vertical-align: top;
 }
 
-.dft__nav__btn:hover {
+.btn:hover {
   color: #8c9ea3;
   transition: all 0.5s;
 }
 
-.dft__nav__btn--next {
+.hidden {
+  visibility: hidden;
+}
+
+.next {
+  composes: btn;
   text-align: right;
 }
 
-.dft__nav__btn--prev {
+.nextHidden {
+  composes: btn hidden;
+}
+
+.prev {
+  composes: btn;
   text-align: left;
 }
 
-.dft__nav__btn--hidden {
-  visibility: hidden;
+.prevHidden {
+  composes: prev hidden;
 }

@@ -1,5 +1,8 @@
-.dft__carousel {
+@import "./config.module.css";
+
+.root {
   height: var(--imageHeight);
   overflow: hidden;
   position: relative;
+  width: var(--imageWidth);
 }

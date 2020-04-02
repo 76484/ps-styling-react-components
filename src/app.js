@@ -5,7 +5,7 @@ import Frame from "./frame.js";
 import Nav from "./nav.js";
 import Slide from "./slide.js";
 
-import "./styles/index.css";
+import "./app.module.css";
 
 export default class DriftApp extends React.Component {
   constructor(props) {

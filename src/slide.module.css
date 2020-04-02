@@ -1,14 +1,16 @@
+@import "./config.module.css";
+
 :root {
   --footerHeight: 110px;
 }
 
-.dft__slide {
+.root {
   position: absolute;
   top: 0;
   transition: all 0.6s;
 }
 
-.dft__slide__footer {
+.footer {
   background: rgba(0, 0, 0, 0.3);
   color: white;
   height: var(--footerHeight);
@@ -20,6 +22,6 @@
   width: 100%;
 }
 
-.dft__slide__footer__title {
+.title {
   margin: 0 0 10px;
 }
